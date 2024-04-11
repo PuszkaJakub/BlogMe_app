@@ -74,7 +74,7 @@ class LoginActivity: ComponentActivity() {
         val loginCollectionRef = Firebase.firestore.collection("users")
         var userFound = false
         try{
-            var querySnapshot = loginCollectionRef
+            val querySnapshot = loginCollectionRef
                 .get()
                 .await()
 

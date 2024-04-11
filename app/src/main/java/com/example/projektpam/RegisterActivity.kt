@@ -50,7 +50,7 @@ class RegisterActivity : ComponentActivity() {
         val loginCollectionRef = Firebase.firestore.collection("users")
         var usernameTaken = false
         try{
-            var querySnapshot = loginCollectionRef
+            val querySnapshot = loginCollectionRef
                 .get()
                 .await()
 
